@@ -12,7 +12,6 @@
 - [教你打造一款颜值逆天的 VS Code](https://toutiao.io/posts/7w5ixl/preview)
 - [炫酷的 VS Code 毛玻璃效果](https://juejin.im/post/5ce1365151882525ff28ed47)
 - [自顶向下的编程方式](https://markhneedham.com/blog/2008/09/15/clean-code-book-review/)
-- [自顶向下编程的 LeetCode 例题](https://leetcode-cn.com/problems/valid-palindrome/)
 
 ## 复杂度分析
 
