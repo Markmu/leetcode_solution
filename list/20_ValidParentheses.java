@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Stack;
 
 class Solution {
-    public boolean isValid(String s) {
+    public boolean isValid2(String s) {
         if (s == null) {
             return false;
         }
@@ -23,6 +23,28 @@ class Solution {
                 stack.pop();
             } else {
                 return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    public boolean isValid(String s) {
+        // & 1 判断长度是否为奇数
+        if (s == null || (s.length() & 1) == 1) {
+            return false;
+        }
+        Stack<Character> stack = new Stack<>();
+        for (char ch : s.toCharArray()) {
+            if (ch == '(') {
+                stack.push(')');
+            } else if (ch == '[') {
+                stack.push(']');
+            } else if (ch == '{') {
+                stack.push('}');
+            } else {
+                if (stack.isEmpty() || stack.pop() != ch) {
+                    return false;
+                }
             }
         }
         return stack.isEmpty();
