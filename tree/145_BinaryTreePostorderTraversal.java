@@ -7,7 +7,32 @@ import java.util.Stack;
 
 
 class Solution {
+
     public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) return result;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = null;
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.peek();
+            if (node.left != null && node.left != cur 
+                && (node.right == null || node.right != cur)) {
+                stack.push(node.left);
+                cur = node.left;
+            } else if (node.right != null && node.right != cur) {
+                stack.push(node.right);
+                cur = node.right;
+            } else {
+                node = stack.pop();
+                result.add(node.val);
+                cur = node;
+            }
+        }
+        return result;
+    }
+
+    public List<Integer> postorderTraversal1(TreeNode root) {
         if (root == null) return new ArrayList<>();
         LinkedList<Integer> result = new LinkedList<>();
         Stack<TreeNode> stack = new Stack<>();
