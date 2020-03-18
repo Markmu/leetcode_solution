@@ -398,8 +398,8 @@ https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
 
 ### 参考链接
 
-- 不可变字符串
-- Atoi 代码示例
+- [不可变字符串](https://lemire.me/blog/2017/07/07/are-your-strings-immutable/)
+- [Atoi 代码示例](https://shimo.im/docs/KkDKkpWxjjrJXdpY/read)
 
 ### 字符串基础问题
 
