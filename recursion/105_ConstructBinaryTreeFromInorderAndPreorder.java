@@ -12,6 +12,7 @@ import tree.TreeNode;
  * }
  */
 class Solution {
+    
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder.length == 0 || inorder.length == 0) return null;
         return helper(preorder, 0, preorder.length - 1, inorder, 0, inorder.length);
