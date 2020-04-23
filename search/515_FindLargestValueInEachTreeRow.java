@@ -34,4 +34,24 @@ class Solution {
         }
         return result;
     }
+
+    public List<Integer> largestValuesDFS(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        dfs(result, root, 0);
+        return result;
+    }
+    
+    private void dfs(List<Integer> result, TreeNode root, int level) {
+        if (root == null) {
+            return;
+        }
+        if (result.size() <= level) {
+            result.add(root.val);
+        }
+        if (result.get(level) < root.val) {
+            result.set(level, root.val);
+        }
+        dfs(result, root.left, level + 1);
+        dfs(result, root.right, level + 1);
+    }
 }
