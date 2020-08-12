@@ -346,6 +346,7 @@ https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
 - [高性能布隆过滤器 Python 实现示例](https://github.com/jhgg/pybloof)
 - [布隆过滤器 Java 实现示例 1](https://github.com/lovasoa/bloomfilter/blob/master/src/main/java/BloomFilter.java)
 - [布隆过滤器 Java 实现示例 2](https://github.com/Baqend/Orestes-Bloomfilter)
+- [Let's implement a Bloom Filter](https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/)
 - [Understanding the Meltdown exploit](https://www.sqlpassion.at/archive/2018/01/06/understanding-the-meltdown-exploit-in-my-own-simple-words/)
 - [替换算法总揽](https://en.wikipedia.org/wiki/Cache_replacement_policies)
 - [LRU Cache Python 代码示例](https://shimo.im/docs/tTxRkGwJpXG6WkGY/read)
