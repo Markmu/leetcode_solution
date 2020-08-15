@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-class Solution {
+class MajorityElement {
 
     public int majorityElement(int[] nums) {
         return majorityHelper(nums, 0, nums.length - 1);

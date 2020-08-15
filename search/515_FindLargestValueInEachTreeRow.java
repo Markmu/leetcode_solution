@@ -15,7 +15,7 @@ import tree.TreeNode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class FindLargestValueInEachTreRow {
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) return result;

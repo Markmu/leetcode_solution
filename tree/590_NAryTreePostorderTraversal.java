@@ -19,7 +19,7 @@ class Node {
     }
 };
 */
-class Solution {
+class NArtTreePostorderTraversal {
     public List<Integer> postorder(Node root) {
         if (root == null) return new ArrayList<>();
         Stack<Node> stack = new Stack<>();

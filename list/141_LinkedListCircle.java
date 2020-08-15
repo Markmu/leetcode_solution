@@ -13,7 +13,7 @@ import java.util.HashSet;
  *     }
  * }
  */
-class Solution {
+class LinkedListCircle {
 
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;

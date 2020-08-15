@@ -11,7 +11,7 @@ import tree.TreeNode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class ConstructBinaryTreeFromInorderAndPreorder {
     
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder.length == 0 || inorder.length == 0) return null;

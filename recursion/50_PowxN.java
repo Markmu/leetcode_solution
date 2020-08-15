@@ -1,6 +1,6 @@
 package recursion;
 
-class Solution {
+class PowxN {
 
     public double myPow(double x, int n) {
         long N = n;

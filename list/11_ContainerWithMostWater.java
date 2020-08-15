@@ -1,6 +1,6 @@
 package list;
 
-class Solution {
+class ContainerWithMostWater {
 
     /**
      * brutal force

@@ -1,6 +1,6 @@
 package string;
 
-class Solution {
+class LengthOfLongestSubstring {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) return 0;
 

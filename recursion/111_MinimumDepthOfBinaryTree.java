@@ -13,7 +13,7 @@ import tree.TreeNode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class MinimumDepthOfBinaryTree {
 
     public int minDepth(TreeNode root) {
         if (root == null) return 0;

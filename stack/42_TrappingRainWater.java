@@ -2,7 +2,7 @@ package stack;
 
 import java.util.Stack;
 
-class Solution {
+class TrappingRainWater {
 
     public int trap(int[] height) {
         if (height == null || height.length < 2) return 0;

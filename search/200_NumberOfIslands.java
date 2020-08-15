@@ -3,7 +3,7 @@ package search;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class NumberOfIslands {
 
     int[] dx = new int[] {-1, 1, 0, 0};
     int[] dy = new int[] {0, 0, -1, 1};

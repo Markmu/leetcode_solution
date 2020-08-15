@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class Solution {
+class NQueen {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
         dfs(result, new ArrayList<>(), new HashSet<>(), new HashSet<>(), n);

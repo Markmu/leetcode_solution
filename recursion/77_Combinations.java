@@ -3,7 +3,7 @@ package recursion;
 import java.util.LinkedList;
 import java.util.List;
 
-class Solution {
+class Combinations {
     
     private List<List<Integer>> result = new LinkedList<>();
     private int n;

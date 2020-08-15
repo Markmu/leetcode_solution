@@ -11,7 +11,7 @@ package list;
  *     }
  * }
  */
-class Solution {
+class LinkedListCircle_II {
     public ListNode detectCycle(ListNode head) {
         if (head == null) return head;
 

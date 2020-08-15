@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Solution {
+class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();
         if (strs == null || strs.length == 0) return result;

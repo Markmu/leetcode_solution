@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-class Solution {
+class WordLadder_II {
     
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         List<List<String>> result = new ArrayList<>();

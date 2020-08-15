@@ -15,7 +15,7 @@ import tree.TreeNode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;

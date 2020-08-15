@@ -2,7 +2,7 @@ package queue;
 
 import java.util.LinkedList;
 
-class Solution {
+class SlidingWindowMaximum {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length < 2) return nums;
         int[] result = new int[nums.length - k + 1];

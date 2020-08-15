@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Solution {
+class LetterCombinationsOfPhoneNumber {
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList<>();
         if (digits == null || digits.length() == 0) {

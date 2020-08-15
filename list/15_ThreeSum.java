@@ -17,7 +17,7 @@ import java.util.List;
  * 双指针法
  * 
  */
-class Solution {
+class TreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         if (nums == null || nums.length < 3) {

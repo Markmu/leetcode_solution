@@ -22,7 +22,7 @@ class Node {
     }
 };
 */
-class Solution {
+class NAtyTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(Node root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;

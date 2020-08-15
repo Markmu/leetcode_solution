@@ -1,6 +1,6 @@
 package recursion;
 
-class Solution {
+class ClimbStairs {
 
     public int climbStairs(int n) {
         if (n < 2) return 1;

@@ -22,7 +22,7 @@ class Node {
     }
 };
 */
-class Solution {
+class NAtyPreorderTraversal {
     public List<Integer> preorder(Node root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) return result;

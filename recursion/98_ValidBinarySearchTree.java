@@ -3,7 +3,7 @@ package recursion;
 import tree.TreeNode;
 
 
-class Solution {
+class ValidBinarySearchTree {
     public boolean isValidBST(TreeNode root) {
         return isValid(root, null, null);
     }

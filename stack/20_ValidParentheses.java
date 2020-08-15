@@ -3,7 +3,7 @@ package stack;
 import java.util.HashMap;
 import java.util.Stack;
 
-class Solution {
+class ValidParentheses {
     public boolean isValid2(String s) {
         if (s == null) {
             return false;

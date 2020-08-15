@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
-class Solution {
+class MinimumGeneticMutation {
     public int minMutation(String start, String end, String[] bank) {
         Set<String> bankset = new HashSet<>(Arrays.asList(bank));
         if (!bankset.contains(end)) return -1;
