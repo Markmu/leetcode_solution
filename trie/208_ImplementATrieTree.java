@@ -1,6 +1,6 @@
 package trie;
 
-class Tire {
+class Trie {
     static class TrieNode {
         private TrieNode[] nodes;
         private final int R = 26;
