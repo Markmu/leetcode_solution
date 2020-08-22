@@ -60,10 +60,8 @@ class NumberOfIslands {
             if (rootX == rootY) return;
             if (this.size[rootX] > this.size[rootY]) {
                 this.parent[rootY] = rootX;
-                this.size[rootX] += this.size[rootY];
             } else if (this.size[rootX] < this.size[rootY]) {
                 this.parent[rootX] = rootY;
-                this.size[rootY] += this.size[rootX];
             } else {
                 this.parent[rootX] = rootY;
                 this.size[rootY] += 1;
