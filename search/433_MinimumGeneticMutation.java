@@ -8,8 +8,18 @@ import java.util.Set;
 
 class MinimumGeneticMutation {
 
-
-
+    /**
+     * "AAAAAAAA"
+     * "CCCCCCCC"
+     * ["AAAAAAAA","AAAAAAAC","AAAAAACC","AAAAACCC","AAAACCCC","AACACCCC","ACCACCCC","ACCCCCCC","CCCCCCCA","CCCCCCCC"]
+     * @param args
+     */
+    public static void main(String[] args) {
+        MinimumGeneticMutation mgm = new MinimumGeneticMutation();
+        System.out.println(mgm.minMutation("AAAAAAAA", "CCCCCCCC", new String[] {
+            "AAAAAAAA","AAAAAAAC","AAAAAACC","AAAAACCC","AAAACCCC","AACACCCC","ACCACCCC","ACCCCCCC","CCCCCCCA","CCCCCCCC"
+        }));
+    }
 
     /**
      * 双向BFS
@@ -30,7 +40,7 @@ class MinimumGeneticMutation {
         char[] mutations = new char[] { 'T', 'A', 'C', 'G' };
         int times = 0;
         while (!beginQueue.isEmpty() && !endQueue.isEmpty()) {
-            if (beginQueue.size() < endQueue.size()) {
+            if (beginQueue.size() > endQueue.size()) {
                 Queue<String> tmp = beginQueue;
                 beginQueue = endQueue;
                 endQueue = tmp;
@@ -45,7 +55,7 @@ class MinimumGeneticMutation {
                     for (int k = 0; k < mutations.length; ++k) {
                         gChars[i] = mutations[k];
                         String newSequence = new String(gChars);
-                        if (newSequence.equals(end)) {
+                        if (endQueue.contains(newSequence)) {
                             return times + 1;
                         }
                         if (bankSet.contains(newSequence) && !visited.contains(newSequence)) {
