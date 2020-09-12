@@ -41,7 +41,7 @@ class WordLadder {
                     for (char c = 'a'; c <= 'z'; ++c) {
                         chs[i] = c;
                         String newWord = new String(chs);
-                        if (newWord.equals(endWord)) {
+                        if (endQueue.contains(newWord)) {
                             return len + 1;
                         }
                         if (wordSet.contains(newWord) && !visited.contains(newWord)) {
